@@ -1,0 +1,150 @@
+{
+  "anchos": [
+    360,
+    540,
+    720
+  ],
+  "calidad": {
+    "avif": 58,
+    "webp": 80
+  },
+  "placeholder": 24,
+  "fotos": {
+    "fade-verde": {
+      "origen": "01_DeISiv5O8PN_1.jpg",
+      "caja": [
+        0,
+        0.1408,
+        1,
+        0.8451
+      ],
+      "proporcion": "4:5",
+      "alt": "Fade con el cabello teñido verde menta, visto de espaldas"
+    },
+    "rubio-textura": {
+      "origen": "02_DeDFtnyOXEP_1.jpg",
+      "caja": [
+        0,
+        0.0703125,
+        1,
+        0.7734375
+      ],
+      "proporcion": "4:5",
+      "alt": "Corte rubio texturizado con taper bajo y un tatuaje en el cuello"
+    },
+    "largo-textura": {
+      "origen": "06_Ddfh6jFtGmj_1.jpg",
+      "caja": [
+        0.0917,
+        0.0547,
+        0.9806,
+        0.6797
+      ],
+      "proporcion": "4:5",
+      "alt": "Cabello largo con capas y textura, de perfil"
+    },
+    "barba-navaja": {
+      "origen": "05_DdkYuFPN8Bj_1.jpg",
+      "caja": [
+        0.0125,
+        0.35,
+        0.9875,
+        0.7623
+      ],
+      "proporcion": "4:3",
+      "alt": "Perfilado de barba con navaja, en primer plano"
+    },
+    "barba-navaja-cuadrada": {
+      "origen": "05_DdkYuFPN8Bj_1.jpg",
+      "caja": [
+        0.26875,
+        0.35,
+        1,
+        0.7623
+      ],
+      "proporcion": "1:1",
+      "alt": "Perfilado de barba con navaja, en primer plano"
+    },
+    "rick-cortando": {
+      "origen": "03_Dd97LsnJBG__1.jpg",
+      "caja": [
+        0.3125,
+        0.1012,
+        1,
+        0.5854
+      ],
+      "proporcion": "4:5",
+      "alt": "Rick, con lentes y guantes, cortándole el cabello a un cliente en la barbería",
+      "parches": [
+        {
+          "caja": [
+            0.435938,
+            0.15669,
+            0.565625,
+            0.213028
+          ],
+          "metodo": "difundir",
+          "suave": 4,
+          "grano": 1
+        },
+        {
+          "caja": [
+            0.470313,
+            0.230634,
+            0.5375,
+            0.286972
+          ],
+          "metodo": "difundir",
+          "suave": 4,
+          "grano": 1
+        }
+      ]
+    },
+    "rick-sonrie": {
+      "origen": "04_DdmozORuoFG_1.jpg",
+      "caja": [
+        0.41666,
+        0.3242,
+        1,
+        0.7344
+      ],
+      "proporcion": "4:5",
+      "alt": "Rick sonriendo junto a un cliente en la barbería"
+    },
+    "historia-1": {
+      "origen": "01_DeISiv5O8PN_1.jpg",
+      "proporcion": "9:16",
+      "alt": "Publicación de Instagram: fade con el cabello teñido verde menta"
+    },
+    "historia-2": {
+      "origen": "02_DeDFtnyOXEP_1.jpg",
+      "proporcion": "9:16",
+      "alt": "Publicación de Instagram: corte rubio texturizado con taper bajo"
+    },
+    "historia-3": {
+      "origen": "03_Dd97LsnJBG__1.jpg",
+      "proporcion": "9:16",
+      "alt": "Publicación de Instagram: «Día 1», Rick cortándole el cabello a un cliente"
+    },
+    "historia-4": {
+      "origen": "04_DdmozORuoFG_1.jpg",
+      "proporcion": "9:16",
+      "alt": "Publicación de Instagram: «No deberías ser tan cercana con los clientes», Rick riéndose con un cliente"
+    },
+    "historia-5": {
+      "origen": "05_DdkYuFPN8Bj_1.jpg",
+      "proporcion": "9:16",
+      "alt": "Publicación de Instagram: «Mi cliente: ¿por qué me dolerá el pecho si solo me están haciendo la barba?», afeitado con navaja"
+    },
+    "historia-6": {
+      "origen": "06_Ddfh6jFtGmj_1.jpg",
+      "proporcion": "9:16",
+      "alt": "Publicación de Instagram: cabello largo con textura, de perfil"
+    },
+    "perfil": {
+      "origen": "perfil.jpg",
+      "proporcion": "1:1",
+      "alt": "Rick, con gorra y lentes"
+    }
+  }
+}

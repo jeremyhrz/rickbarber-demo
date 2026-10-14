@@ -1,0 +1,206 @@
+/*
+ * Estilos propios de Servicios, la Agenda y el botón flotante (src/sections/agenda/).
+ * Lo que Tailwind no resuelve cómodo: el ticket de papel (dientes, perforación, sello), las
+ * alturas que se acomodan suave y el pulso del botón flotante. Colores siempre con las
+ * variables de la base (--hueso, --carbon, --grafito…).
+ */
+
+/* Contenedor que acompaña con suavidad los cambios de alto entre pasos (AlturaSuave.jsx). */
+.altura-suave {
+  overflow: hidden;
+  transition: height 0.55s var(--expo);
+}
+
+/* Acordeón de Servicios en el teléfono: la fila se abre con grid-template-rows (0fr → 1fr). */
+.plegable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.65s var(--expo);
+}
+
+.plegable[data-abierto='true'] {
+  grid-template-rows: 1fr;
+}
+
+.plegable > * {
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ── Ticket de la cita ───────────────────────────────────────────────────────────── */
+
+/* La ranura de la «impresora» de la que sale el ticket. */
+.ticket-ranura {
+  position: relative;
+  padding-top: 5px;
+}
+
+.ticket-ranura__boca {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  right: -6px;
+  z-index: 2;
+  height: 11px;
+  border-radius: 999px;
+  background-color: #060607;
+  box-shadow:
+    inset 0 2px 4px rgb(0 0 0 / 0.9),
+    0 1px 0 rgb(242 237 228 / 0.08);
+}
+
+/* Papel hueso con el borde de abajo en dientes de sierra (máscara cónica, sin imágenes). */
+.ticket {
+  --dientes: 14px;
+  position: relative;
+  color: var(--carbon);
+  background-color: var(--hueso);
+  background-image:
+    linear-gradient(180deg, rgb(0 0 0 / 0.07), rgb(0 0 0 / 0) 18px),
+    radial-gradient(120% 60% at 50% 0%, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0) 70%);
+  padding-bottom: calc(var(--dientes) / 2 + 14px);
+  -webkit-mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / var(--dientes) 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / var(--dientes) 100%;
+}
+
+/* Línea de corte punteada con las muescas a los lados (del color de la tarjeta). */
+.ticket__corte {
+  position: relative;
+  margin-inline: 18px;
+  border-top: 2px dashed rgb(14 14 15 / 0.2);
+}
+
+.ticket__corte::before,
+.ticket__corte::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--grafito);
+}
+
+.ticket__corte::before {
+  left: -29px;
+}
+
+.ticket__corte::after {
+  right: -29px;
+}
+
+/* Rótulo pequeño del ticket (carbón al 68 % sobre hueso: 5,6:1). */
+.ticket__rotulo {
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(14 14 15 / 0.68);
+}
+
+/* Fila «Servicio ········ Corte + Barba», con la guía de puntos de un recibo. */
+.ticket__dt {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: baseline;
+  gap: 0.6rem;
+  min-width: 2.5rem;
+}
+
+/* Puntos dibujados con un degradado: el «dotted» de WebKit sale como una raya continua. */
+.ticket__dt::after {
+  content: '';
+  flex: 1 1 auto;
+  min-width: 0.75rem;
+  height: 2px;
+  background-image: radial-gradient(circle, rgb(14 14 15 / 0.42) 0.8px, transparent 1.1px);
+  background-size: 5px 2px;
+  background-repeat: repeat-x;
+  transform: translateY(-0.25em);
+}
+
+/* Sello «Por confirmar», un poco torcido, como hecho a mano. */
+.ticket__sello {
+  display: inline-block;
+  padding: 0.5em 0.7em 0.45em;
+  border: 1.5px solid rgb(14 14 15 / 0.72);
+  border-radius: 6px;
+  font-size: 0.58rem;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(14 14 15 / 0.78);
+  transform: rotate(-7deg); /* framer-motion lo anima al entrar y lo deja así */
+}
+
+/* Campo «A nombre de» escrito sobre la línea del ticket. 17 px: iOS no hace zoom al tocarlo. */
+.ticket__campo {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.3rem 0 0.4rem;
+  border: 0;
+  border-bottom: 1.5px solid rgb(14 14 15 / 0.38);
+  border-radius: 0;
+  background: transparent;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--carbon);
+  caret-color: var(--carbon);
+  outline: none;
+  transition: border-color 0.3s var(--suave), box-shadow 0.3s var(--suave);
+}
+
+.ticket__campo::placeholder {
+  color: rgb(14 14 15 / 0.45);
+  font-weight: 500;
+}
+
+.ticket__campo:focus,
+.ticket__campo:focus-visible {
+  outline: none;
+  border-bottom-color: var(--carbon);
+  box-shadow: 0 1.5px 0 0 var(--carbon);
+}
+
+/* Vista previa del mensaje (<details> en el teléfono): sin el triángulo del navegador. */
+.agenda-detalles > summary {
+  list-style: none;
+}
+
+.agenda-detalles > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ── Botón flotante ──────────────────────────────────────────────────────────────── */
+
+@keyframes flotante-pulso {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70%,
+  100% {
+    transform: scale(1.22, 1.5);
+    opacity: 0;
+  }
+}
+
+.flotante-pulso {
+  animation: flotante-pulso 2.8s var(--suave) 0.6s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .altura-suave,
+  .plegable {
+    transition: none;
+  }
+
+  .flotante-pulso {
+    animation: none;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,161 @@
+/*
+ * Vitrina: estilos propios de Trabajos, Barbas, Rick, Ubicación, Instagram y Pie.
+ * CSS plano (sin @layer): lo que haga falta cambiar por tamaño va en sus propias media queries,
+ * para no pelear con las utilidades de Tailwind.
+ */
+
+/* Marco de foto: un filete de latón por dentro, como el paspartú de una lámina. */
+.marco {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--grafito);
+}
+
+.marco::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  z-index: 2;
+  border: 1px solid rgb(227 200 142 / 0.4);
+  pointer-events: none;
+}
+
+/* Carrusel con scroll nativo (el dedo manda en el teléfono) e imán en cada tarjeta. Ocupa todo el
+   ancho, pero la primera tarjeta arranca alineada con el contenedor de la página. */
+.carrusel {
+  --margen-carrusel: max(var(--margen), calc((100% - 1320px) / 2));
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--margen-carrusel);
+  padding-inline: var(--margen-carrusel);
+  -webkit-overflow-scrolling: touch;
+}
+
+.carrusel > * {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+/* Mientras se arrastra con el ratón, sin imán (si no, cada píxel saltaría a una tarjeta). */
+.carrusel--arrastrando {
+  scroll-snap-type: none;
+  cursor: grabbing;
+  user-select: none;
+}
+
+/* Tira de historias: carrusel en el teléfono, rejilla de 6 desde 1024 px (con Tailwind). */
+@media (max-width: 1023.98px) {
+  .tira {
+    --margen-carrusel: var(--margen);
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--margen-carrusel);
+    padding-inline: var(--margen-carrusel);
+  }
+
+  .tira > * {
+    flex: none;
+    scroll-snap-align: start;
+  }
+}
+
+/* Puntos guía entre el día y la hora del horario. */
+.puntos {
+  flex: 1 1 auto;
+  min-width: 1.5rem;
+  margin-inline: 0.75rem;
+  border-bottom: 1px dotted rgb(242 237 228 / 0.28);
+  transform: translateY(-0.3em);
+}
+
+/* «Plano» de la ubicación: cuadrícula fina, como papel milimetrado de arquitecto. */
+.plano {
+  background-color: var(--grafito);
+  background-image:
+    linear-gradient(rgb(242 237 228 / 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(242 237 228 / 0.05) 1px, transparent 1px),
+    linear-gradient(rgb(201 161 91 / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(201 161 91 / 0.08) 1px, transparent 1px);
+  background-size:
+    22px 22px,
+    22px 22px,
+    110px 110px,
+    110px 110px;
+  background-position: center;
+}
+
+/* Ondas que salen del pin del mapa. */
+.onda {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 46%;
+  aspect-ratio: 1;
+  border: 1px solid rgb(201 161 91 / 0.55);
+  border-radius: 999px;
+  translate: -50% -50%;
+  opacity: 0;
+  animation: onda 3.6s var(--suave) infinite;
+}
+
+.onda:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.onda:nth-child(3) {
+  animation-delay: 2.4s;
+}
+
+@keyframes onda {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Barra de una historia que se llena al pasar el cursor (o al enfocarla). */
+.historia__llenado {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--suave);
+}
+
+@media (hover: hover) {
+  .group:hover .historia__llenado {
+    transform: scaleX(1);
+    transition: transform 2.6s linear;
+  }
+}
+
+.group:focus-visible .historia__llenado {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .onda {
+    animation: none;
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  .onda:nth-child(n + 2) {
+    display: none;
+  }
+
+  .historia__llenado,
+  .group:hover .historia__llenado {
+    transition: none;
+  }
+}

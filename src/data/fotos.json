@@ -1,0 +1,193 @@
+{
+  "fade-verde": {
+    "ancho": 640,
+    "alto": 800,
+    "proporcion": "4:5",
+    "anchos": [
+      360,
+      540,
+      640
+    ],
+    "base": "/fotos/fade-verde-006e9f7b",
+    "placeholder": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAAAwBQCdASoYAB4APt1kp0+opSMiKAqpEBuJagC06Gk9QHC+Hq2jZBAXYiJNoj9sCIfXAAD+1m3SEtsiiQDKkXGrwdB6e4+xwSUfiWaxZAbWQ+MxW40uUA8qNuZwZQU6mIgwBCiSf85XsveaNQhUrlpK8wqYjhudsfEntpkBFduXufaJWnxni3Jh2YpYf0aKKRTIM4Nt3RZK+JNoilZJR/FF22dL/OEbGF6PUS3awGohADDBVTNcV4zxdf28f2AK18x8cx0Btv4w4SjV8gAAAA==",
+    "color": "#93896e",
+    "alt": "Fade con el cabello teñido verde menta, visto de espaldas"
+  },
+  "rubio-textura": {
+    "ancho": 720,
+    "alto": 900,
+    "proporcion": "4:5",
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/rubio-textura-8e17f8fe",
+    "placeholder": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAADwBQCdASoYAB4APt1cqU6opKOiMBgIARAbiWYAtQk7oMsI0MPTouSU+I6wB188YXaRQrvhB97wwAD6SY2mzKduaaNe0+0ilcSzjd4VpJu2UuwtxFlf9PJOTQYEyvs9wdf1U1SBOdGBmM63xtt3JZoTTK1zljHviSqS80c6BhuJwPT8DN66QP6q7oGR6R19SsP9HpGjz0+lzcvtKez21EunJc/G+J7zLoyYKRWxjRAVfhF07iTLjqbxVLVDaVjcqNZQnDlCdTl5uNZk3O3iuHqocPidBWm8diOau1tnCmDuMox9QJCS6E+exDKTzK0R3blF6lnBOcAAAA==",
+    "color": "#7f7068",
+    "alt": "Corte rubio texturizado con taper bajo y un tatuaje en el cuello"
+  },
+  "largo-textura": {
+    "ancho": 640,
+    "alto": 800,
+    "proporcion": "4:5",
+    "anchos": [
+      360,
+      540,
+      640
+    ],
+    "base": "/fotos/largo-textura-fda6cd02",
+    "placeholder": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBQCdASoYAB4APt1ep06opKMiMBgIARAbiWQAuyDYiYpb3Pz0jcdPkAP133MOn0eRQnBx53wA4b25NPH2+mLn5NKStlWicBIiH68l/YUMQjIxTikv/bQxfVC5Ly35hp+wqocfpmoTyl8M28FhT2vfgajJPt2KAAaFzDNEuhP3qs3o5opK2CEcfynzoPtitxIT9v9hPfmT8IxfwH9gyqM01zVfKyU+5KOsAA==",
+    "color": "#7c7167",
+    "alt": "Cabello largo con capas y textura, de perfil"
+  },
+  "barba-navaja": {
+    "ancho": 624,
+    "alto": 468,
+    "proporcion": "4:3",
+    "anchos": [
+      360,
+      540,
+      624
+    ],
+    "base": "/fotos/barba-navaja-5570bffc",
+    "placeholder": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAADQBQCdASoYABIAPt1kqU+opaOiKAqpEBuJaACxG68agJoIJRNUPVLTV5LUHX5pf4Pxf9DI/F14AP5Pek7JWQQfqX6CdCiFeKiHFA5ufeiWcP+/bAYzUnYC22yW1wM/fE8YT9+6sBLJllypK5cAySXt0xlOQBw9qs6qQiUOvo4w+UfXfx0nDsuMtf4cgyy2RVXbt4y6tN3vffix6uPhHeAzWFn4jxr8N+jp+p0QhBjNEFKUY/BuLCOZpD8oJGch9xLx//xMtqnYjQzNUEgc9NLanUkTnw/5pQAAAA==",
+    "color": "#8f6e55",
+    "alt": "Perfilado de barba con navaja, en primer plano"
+  },
+  "barba-navaja-cuadrada": {
+    "ancho": 468,
+    "alto": 468,
+    "proporcion": "1:1",
+    "anchos": [
+      360,
+      468
+    ],
+    "base": "/fotos/barba-navaja-cuadrada-a66e1a20",
+    "placeholder": "data:image/webp;base64,UklGRhABAABXRUJQVlA4IAQBAABQBgCdASoYABgAPt1kp0+opSMiKAqpEBuJagCdL9b0ACHFB4VpA/GjpI4Am+xXqsr/Fc+2AHpLIH10QAD+UyYxykd5j62roCdjkam4ZkE3bYtmlkVljNQs7lb+y04mRN48XU8pr9iwv1xM07W+ZC0EclxfHq+j15jxaYUTcB1ilOAqMdEngMhARX7RT9Bumj7QwDiyC6Xu/gYgXmQfgfaXcKUJgEGd9P+h8orFa1SWju4rH3z8qhIfD93gA6LoC7UZnQlj9L5CiHkpbKjyBNYXlD4eZDXeR0N0LB+7mT+YQJ2m+B/MztNIPRdHfGOwgIzC4MYFr8X7iA+7DItfC486uAAAAA==",
+    "color": "#8d6a52",
+    "alt": "Perfilado de barba con navaja, en primer plano"
+  },
+  "rick-cortando": {
+    "ancho": 440,
+    "alto": 550,
+    "proporcion": "4:5",
+    "anchos": [
+      360,
+      440
+    ],
+    "base": "/fotos/rick-cortando-d0afab6f",
+    "placeholder": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAABwBgCdASoYAB4APt1gq08opSQiKAqpEBuJQBgJH+VNBHjD1QCJUf3CBoUPJYT5aJHt3P2yKmzlwqeb7MAA/o0jqMfIwkbue744Qnc8TW0q8DqQSq0mMl/djaCJdqvCfTiJO+ONv0l02uyjHRIoF1RtLJfp2aude0xnODfvFKeMPZQSrlLzdNzBJoaYPH7AIOKYr4Cb3WENwPhC09boWPwKZw/3dQYvWjEUEUaCOS3PQ8oO3b/oOfLCUvTXHnxloMObleextCJHatdh1hmDQpafR34PdFMaPtLR6IOmdZ9C5VUvqa6s1lAA",
+    "color": "#949089",
+    "alt": "Rick, con lentes y guantes, cortándole el cabello a un cliente en la barbería"
+  },
+  "rick-sonrie": {
+    "ancho": 420,
+    "alto": 525,
+    "proporcion": "4:5",
+    "anchos": [
+      360,
+      420
+    ],
+    "base": "/fotos/rick-sonrie-251302f4",
+    "placeholder": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAACwBgCdASoYAB4APt1WqEyopCQiMBgMARAbiWwAsRSuoyKDNJa5DU1p2vVQ/Pwcx5YuJVL7nvgnE8+H6SUgAAD+04Wcevk+8hoFQhVUJ2AqazKdgJFkWPopjZ2Xbzlsh+7yzszgRCaKagcC4clWa0R48whDiiXiAJRItLshvUVCV1xfhr/bkAgwgvQpiTcF6DPdU55mJB0raA9OoCiBd88D+CRLVOpZgA13SqKUQ0CFgadddSI7S4aaUtZZSIT9TEnIgynmyPQwNj393Ojqyg+PJsc36GPUBmYfv7BEgzDqO/bGAfCuCFav/5rrEi+mwO8L8Ayps7iGA937RSXS4DZxHEnVhrI2+jVQyAAA",
+    "color": "#87734e",
+    "alt": "Rick sonriendo junto a un cliente en la barbería"
+  },
+  "historia-1": {
+    "ancho": 639,
+    "alto": 1136,
+    "proporcion": "9:16",
+    "anchos": [
+      360,
+      540,
+      639
+    ],
+    "base": "/fotos/historia-1-941a5000",
+    "placeholder": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAAAQBwCdASoYACsAPt1eqU2opSQiMBVaqRAbiWoAsR++b4DYbYcWsdAmEP5Wrl/v4S56Yb4bqGQVyLg8cIrJqvxOAAD+tdVhhH+w/BGitC4uMZb3My3QMTRn8z67MhuKFh9Pim6OagqbXrZGT8OpHlCi26YxWda+VSLQq++l5ECRCtvF49OJIUoiO3/zHo2lB14pVB6vscP5mETxyxE957z46fAShrQQoNmHbdkUC/N07gvZV3q2WZ83yeVaEZmEBQq0Rv0cSk02Pglr9EMFHnLdw8jDQihN1mNxxlM70KaIis6zualSZ7g9CFI1wAoWrCfeaTycy2GvbdjuBCgRClNXWVF8FXhd72ywOQJwAAA=",
+    "color": "#9d9467",
+    "alt": "Publicación de Instagram: fade con el cabello teñido verde menta"
+  },
+  "historia-2": {
+    "ancho": 720,
+    "alto": 1280,
+    "proporcion": "9:16",
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/historia-2-f4cebd29",
+    "placeholder": "data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAACwBgCdASoYACsAPt1gp06opSMiKqoBEBuJQBkiAmt8Mni0AhV3V5QB3qiiu0iBOT+EW6IMUKywa0vlXBslgAD6R7J2OkIvIEOTNwYSL+qxoNJHA6DIEB5aTq5Y3Up0X28rKT9T6XInvGa4q3EyX33XrmfD7aDCe+6wX/qvyw23ne1XesU9zfexcPQ8ANWH/tJLyPus7ERiJasQagPOozIO0aOJCBmQFEjKL54OtD8aFgWPdoI7bTZeliCxxWT6HkiPa2jeLolzOWVKxt9BFIClXOOCW4T0FpHy2GT3S/Q/zQaq7Aa+ykw7qIEm8N777iel84kuPPspPiegBb99reSdhBQ2czGDWkc7POJndE64/magj+5EKiKYAAA=",
+    "color": "#726763",
+    "alt": "Publicación de Instagram: corte rubio texturizado con taper bajo"
+  },
+  "historia-3": {
+    "ancho": 639,
+    "alto": 1136,
+    "proporcion": "9:16",
+    "anchos": [
+      360,
+      540,
+      639
+    ],
+    "base": "/fotos/historia-3-18fab63b",
+    "placeholder": "data:image/webp;base64,UklGRo4BAABXRUJQVlA4IIIBAAAwCACdASoYACsAPt1iqU+opSOiKrgKARAbiWoAw7K6MUA7At+ef7AXkNsOUegphPrBSx188K42veQEc8PmrsSnVFZ7y76cgRsYAAD+kJD5nPW3s/a8a+z7IJMB2pEelzzUUB/6c4/F1D4corg5RLA2Ln7IzmtlCLoEo98tk1tSVB4KVSleWIm+1tq4GqFYk7uB81zl4ENkPlTDPD1//Lhxg65Rmz5PcCc+D6xQ4+AuanzVHpqtuiaoWT0svgLRWFnWu+ex/VYhniBzUyG68CELX1iIDbXNqIRLOKDJfjIXb814v/iQr9sk/EF8t2b5qWKKnMb0WjDYEAKShADvJx7Epqgiw+Rb7cm/k4CaaDf2ckXc09w5WTrfSmbV5UIdnCGIo5zbH76Qb+TtJHHqtELAjSBiIYIliJXvMjos1QP5UlM/qps40J2gb+FX+OYkrzhi97RS9gOXYAifhSGpUN0utbrv6F9mbejc9RQ0iKe3wl8kn8tljOg6I3nvGMWO0WB4AA==",
+    "color": "#8c8367",
+    "alt": "Publicación de Instagram: «Día 1», Rick cortándole el cabello a un cliente"
+  },
+  "historia-4": {
+    "ancho": 720,
+    "alto": 1280,
+    "proporcion": "9:16",
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/historia-4-070fe4a4",
+    "placeholder": "data:image/webp;base64,UklGRpABAABXRUJQVlA4IIQBAACwCACdASoYACsAPtlcpkyoJSOiKq35ABsJbADFALMipvQOf/sllfxTl5ZemqaMOq0NGzVhM1uL9eKiWC5m9MKRwH7Nk/9rTQmYUowiaQAA/fdcICL/yvOl4cdwFmdBHAUT1/1JHlICcWRvWEwhDsI61X1/E1PawRKOGvg/u6UgsIYaO6TW6oLIX5lNlSxGWu7jT+Iz4LNdntOr77dwf0UYdYroOx8zobM5UPHUGvzLew7DYPyULFG2c5O5QopNbuH0EmhjCUMqZCvoSrZX+g8KRUwqReU9djLMpJIkT4RGyukPcS0QPW/8RjICQGw7R60qLzeQQQXrKG0xIoKs7JDlERWZa1SVjGhyd9CNIc+lXLhAjcCurxSVFhV39M2EmpChSdrbpwrw5EU6GAp9NyaWxiwQR5ADwtj7wB2X0lLsKO/oInpAgdV3Oi30+6kPSJ7RymtWdgPBfuWAv2E1WeXlOtFVqIsV8TmnjOuaJmE90GBm6ke9Enl3foSNqnzKPw5BogAA",
+    "color": "#80765e",
+    "alt": "Publicación de Instagram: «No deberías ser tan cercana con los clientes», Rick riéndose con un cliente"
+  },
+  "historia-5": {
+    "ancho": 639,
+    "alto": 1136,
+    "proporcion": "9:16",
+    "anchos": [
+      360,
+      540,
+      639
+    ],
+    "base": "/fotos/historia-5-d042c90b",
+    "placeholder": "data:image/webp;base64,UklGRuABAABXRUJQVlA4INQBAADQCACdASoYACsAPt1iqU+opSOiKqgBEBuJbACxHsWzINA7TwyBWK3dFqh4piHjfrSDs8ltVT1sYxI0Q7n34vnJWCD9SugwpoP5fNFQvQoAAP6IHs9EywSNQycwZh74Pt0Qw/Nl7h00YgLPbOAGo/XHdZojvhAktRSXibR5nDNVP+i50V/zNzGJHVSeDJlStlE8TEaVQAE4MCnTQ842v5ve7TaP3r51yQtlGD1xB93B9t+jX2t0zisardoPCaed98wAO/9g0YkFvughD77IB2CWzTYBNluccQEDYsqu54DulHGbx6JkjoHXoMDgpFxC/Nqf+PR63EBplK0jo7T1fV6BLS85tpuCRz3ql0mxkUUFth/NNWwXB4+nQb12TI1le95WaUKyuL1dqHZhI5ydtlXQiE5aMux8yqdSqZD7OfUMR4br/JnuYWWcEUPlwLpqbkE5kWBLPsQfq2DKyt+OJGg/6TIxU+Fz8ITtr3yCidkIDVgy28vn3FYUyHKUOCgprrjty9KW0KfkxCQybk6Gt7EbRZoqI+GdmxeUDmp2mlZBn7Hn1WyL6IOLRIj6e+ITF3XV405wWo6HUnTaX00SX2MLLwfUu6ecOsDD1Hq6uzCqPNNQAAA=",
+    "color": "#7f6256",
+    "alt": "Publicación de Instagram: «Mi cliente: ¿por qué me dolerá el pecho si solo me están haciendo la barba?», afeitado con navaja"
+  },
+  "historia-6": {
+    "ancho": 720,
+    "alto": 1280,
+    "proporcion": "9:16",
+    "anchos": [
+      360,
+      540,
+      720
+    ],
+    "base": "/fotos/historia-6-7cad8eda",
+    "placeholder": "data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAAAQBwCdASoYACsAPt1kqVAopSOipWzJEBuJbAC2Ta5g9/qITU4+hid6LDL47DnmXNd50WY0auZ8PC3V7zQ9FJ4mgADwI8Anr7H2E0nCkeVIzbZMEkE2v3Vvj0HowAxsm0kgY6jv0RloZSG3q3g1TL0xPtWVlr5PwFy0VdWRIiD7JPDub2Y5hDU8BHRzGBvLNI+IDYxqB1xkCA48a83IwQ/N9NjH+/x57VokHqiCJRu5uzmNIp10R6hcPZqYwRvwVslK7b/0lN1y13J/qAs6JpOZfzurg6f0efPNgwgh0RFBV8I7hNG/keo0F2bjUbk3ev0dpfccAfr8UyZaVKqCFEKFooBfYlb72zbC4TL+sTrwAuaY0UupA/95r/SjGQj+gtAAAA==",
+    "color": "#898250",
+    "alt": "Publicación de Instagram: cabello largo con textura, de perfil"
+  },
+  "perfil": {
+    "ancho": 100,
+    "alto": 100,
+    "proporcion": "1:1",
+    "anchos": [
+      100
+    ],
+    "base": "/fotos/perfil-49c1690b",
+    "placeholder": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAAAwBgCdASoYABgAPt1iq0+opSQiKAqpEBuJZgC7AmwHWZITypibK7K5/y9iPcWTr+L/uQIrvWfyQ3AAAP7qdfONmxlB0vmoPYeEBcOKSHmbQ+OOU8r+HrP3mSa/Hko6c50xrV06ldMl00nnEl2Jbo3BljRKfXiA+1fV78gBWkCh3KoXOVccsLCPrQ1fgQaThP7NZro0rhW1/VafE15YVy09xILB/uJRCjMDTBEUxFqaXcOoDIIKZliyLu++18tKknBzEQbz72rztuHu6oOZ1uu0Nxt1ROVoTbhuVT0AAAA=",
+    "color": "#a69f97",
+    "alt": "Rick, con gorra y lentes"
+  }
+}
